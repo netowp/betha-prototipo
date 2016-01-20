@@ -12,6 +12,7 @@ html, body {
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 50px;
+   height: 100%;
 }
 
 .header,
@@ -265,7 +266,8 @@ display:         flex;
 }
 */
 
-.caracteristicas hr {
+.caracteristicas hr,
+h4 + hr {
    margin: 2px 0;
 }
 
@@ -350,33 +352,33 @@ h3 {
 /*FOR DARSHBOARD*/
 
 .col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
 }
 
 .col-xs-1-5 {
-	width: 20%;
-	float: left;
+   width: 20%;
+   float: left;
 }
 @media (min-width: 768px) {
-	.col-sm-1-5 {
-		width: 20%;
-		float: left;
-	}				
+   .col-sm-1-5 {
+      width: 20%;
+      float: left;
+   }				
 }
 @media (min-width: 992px) {
-	.col-md-1-5 {
-		width: 20%;
-		float: left;
-	}
+   .col-md-1-5 {
+      width: 20%;
+      float: left;
+   }
 }
 @media (min-width: 1200px) {
-	.col-lg-1-5 {
-		width: 20%;
-		float: left;
-	}
+   .col-lg-1-5 {
+      width: 20%;
+      float: left;
+   }
 }
 .dia-dash {
    font-size: 10px;
@@ -384,19 +386,20 @@ h3 {
 }
 
 .valor-dash {
-   font-size: 28px;
+   font-size: 22px;
 }
 
 .tabs-dias div {
-   background-color: #ecf0f1;
    padding-top: 18px;
    border-bottom: 1px solid #dbdbdb;
-   position: relative;
    z-index: -333;
 }
 
 .right-panel {
-   padding-top: 25px;
+   margin-top: 25px;
+   padding-left: 25px;
+   padding-right: 25px;
+
 }
 
 .tabs-dias {
@@ -407,6 +410,8 @@ h3 {
    border-right: 1px solid #dbdbdb;
    z-index: 99;
    position: relative;
+   background-color: #ecf0f1;
+   background-clip: border-box;
 
 }
 
@@ -417,6 +422,85 @@ h3 {
    border-top: 1px solid #dbdbdb;
    border-left: 1px solid #dbdbdb;
    border-right: 1px solid #dbdbdb;
+   border-bottom: 1px solid white;
    padding-top: 29px; /* 2px from the corner radius + 1 from border + margin-top * 2 = 29 */
    margin-top: -12px;
+}
+
+.dash-box {
+   margin-top: 25px;
+}
+
+.dash-box-content {
+   padding: 25px 0;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   border-bottom: 1px solid #dbdbdb;
+   background: white;
+   margin-bottom: 0 25px;
+}
+
+.tabs-dias ~ .dash-box-content {
+   border-top: 0;
+}
+.detalhes-usuarios-online .glyphicon {
+   vertical-align: middle;
+   font-size: 20px;
+   display: inline-block;
+   margin-top: -5px;
+   margin-right: 5px;
+}
+
+.menu-lateral {
+   padding: 0;
+   border-right: 1px solid #dbdbdb;
+   height: 100%;  
+   float: left;
+   position: fixed;
+}
+
+.menu-lateral ul li {
+   border-radius: 20px;
+   margin: 0;
+}
+
+.menu-lateral .nav-pills>li>a {
+   border-radius: 0;
+}
+
+.active {
+   background-color: #29B6F6;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+   background-color: #29B6F6;
+}
+
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+
+.conteudo {
+   float: right;
 }
