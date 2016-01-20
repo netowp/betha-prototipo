@@ -47,7 +47,7 @@ html, body {
 }
 
 .custom-input {
-   width: auto;
+   width: 100%;
 }
 
 .content {
@@ -76,7 +76,6 @@ Welcome to the weirdness world of web-developmentz */
 .custom-input input,
 .custom-input button {
    padding: 16px;
-   padding-left: 32px;
    height: auto;
    font-size: 18px;
 }
