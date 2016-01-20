@@ -1,9 +1,19 @@
 /* Space out content a bit */
+/*
 body {
-   padding-bottom: 20px;
+padding-bottom: 20px;
+}
+*/
+
+html, body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   background-color: #f8f8f8;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 50px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
@@ -11,13 +21,18 @@ body {
    padding-left: 15px;
 }
 
-/* Custom page header */
 .header {
    background-color: #29B6F6;
    height: 64px;
 }
 
-/* Make the masthead heading the same height as the navigation */
+.header li a {
+   border-radius: 100px;
+   padding-left: 25px;
+   padding-right: 25px;
+   margin-left: 15px;
+}
+
 .header h3,
 .header p {
    margin-top: 0;
@@ -26,14 +41,65 @@ body {
    color: white;
 }
 
-/* Custom page footer */
+.btn-group {
+   margin: 32px 0 28px 0;
+}
+
+.custom-input {
+   width: auto;
+}
+
+.content {
+   overflow: hidden;
+   position: relative;
+   max-width: 100%;
+   width: 100%;
+   height: 200px;
+   background-color: white;
+   height: auto;
+   margin-bottom: 25px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 36px;
+   padding: 10px 25px 25px 25px;
+   border-radius: 3px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+/* Weird thing 'bout this.
+If font-size is even, the text inside the input
+will be cutted off. 
+
+Welcome to the weirdness world of web-developmentz */
+.custom-input input,
+.custom-input button {
+   padding: 16px;
+   height: auto;
+   font-size: 18px;
+}
+
+.custom-input .btn {
+   margin-left: 12px;
+   background: #29B6F6;
+   color: white;
+}
+
+.btn {
+   background: #29B6F6;
+}
+
+
+.btn-group .btn {
+   border-radius: 100px;
+}
+
 .footer {
    padding-top: 19px;
    color: #777;
    border-top: 1px solid #e5e5e5;
 }
 
-/* Customize container */
 @media (min-width: 768px) {
    .jumbotron .container,
    .container {
@@ -44,7 +110,6 @@ body {
    margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
    text-align: center;
    border-bottom: 1px solid #e5e5e5;
@@ -68,7 +133,6 @@ body {
    color: white;
 }
 
-/* Supporting marketing content */
 .marketing {
    margin: 40px 0;
 }
@@ -76,18 +140,212 @@ body {
    margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-   /* Remove the padding we set earlier */
+
    .header,
    .marketing,
    .footer {
       padding-right: 0;
       padding-left: 0;
    }
-   
-   /* Remove the bottom border on the jumbotron for visual effect */
+
    .jumbotron {
       border-bottom: 0;
    }
+
+}
+
+.ins-imobiliaria {
+   font-size: 48px;
+   font-weight: 400;
+   margin: 0;
+}
+
+
+
+/* Removes the spin button from Chrome and webkit browsers.
+Man, it is annoying some times */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0; 
+}
+
+.infos {
+   font-weight: 200;
+}
+
+
+
+.endereco {
+   line-height: 22px;
+}
+
+.right p {
+   margin-bottom: -30px;
+   margin: 0px;
+   vertical-align: top;
+}
+
+.left {
+   float: left;
+   height: 100%;
+   clear: both;
+   position: relative;
+}
+
+.barcode {
+   height: auto;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   max-width: 150px;
+   display: block;
+   margin: auto;
+
+}
+.nopadding {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+}
+
+.info-pagamento h2 {
+   padding: 0;
+   margin-top: 0;
+}
+
+.btasn {
+
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.1;
+   text-transform: uppercase;
+   letter-spacing: inherit;
+   color: rgba(255, 255, 255, 0.87);
+}
+.test {
+   background-color: #E5615C;
+   color: white;
+   font-weight: 100;
+}
+
+.test p {
+   font-weight: 100;
+}
+
+.glyphicon.glyphicon-one-fine-dot:before {
+   content: "\25cf";
+   font-size: 1em;
+   margin-right: 12px;
+}
+
+.icon-green {
+   color: #A8E763;
+}
+
+.icon-orange {
+   color: #FF7A75;
+}
+
+.detalhes-conta-anual h1 {
+   margin-bottom: 6px;
+}
+
+.legenda {
+   color: #4a4a4a;
+   font-weight: 200;
+   font-size: 14px;
+}
+
+/*
+.row {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display:         flex;
+}
+*/
+
+.caracteristicas hr {
+   margin: 2px 0;
+}
+
+.caracteristicas .valor {
+   margin: 0;
+   font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+   body {
+
+   }
+
+   .barcode {
+      max-width: 64px;
+   }
+
+   h1,
+   .ins-imobiliaria {
+      font-size: 28px;
+   }
+}
+
+.categoria {
+   font-size: 12px;
+   margin: 0;
+   color: #888888;
+}
+
+h3 {
+   margin: 0;
+}
+
+.inicio {
+   margin-top: 56px;
+}
+
+.logotype {
+   float: left;
+   height: 50px;
+   margin: 0px;
+   padding: 0px;
+}
+
+.navbar {
+   background: #29B6F6;
+   margin: 0;
+}
+
+.navbar .nav > li > a {
+   padding: 15px 0px;
+}
+
+.navbar-inverse .navbar-brand {
+   color: white;
+}
+
+.navbar .nav > li > a > span { 
+   color: white; 
+   font-weight: 500;
+   padding: 8px 20px 8px 20px;
+}
+
+.navbar .nav > li > a > span:hover { 
+   border-radius: 28px;
+   background: #1ea1e0 ;
+}
+.navbar-static-top {
+   border: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+   border: 0;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+   background: none;
 }
