@@ -75,6 +75,7 @@ Welcome to the weirdness world of web-developmentz */
 .custom-input input,
 .custom-input button {
    padding: 16px;
+   padding-left: 32px;
    height: auto;
    font-size: 18px;
 }
@@ -83,12 +84,8 @@ Welcome to the weirdness world of web-developmentz */
    margin-left: 12px;
    background: #29B6F6;
    color: white;
+   border: 0;
 }
-
-.btn {
-   background: #29B6F6;
-}
-
 
 .btn-group .btn {
    border-radius: 100px;
@@ -348,4 +345,74 @@ h3 {
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
    background: none;
+}
+
+/*FOR DARSHBOARD*/
+
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-xs-1-5 {
+	width: 20%;
+	float: left;
+}
+@media (min-width: 768px) {
+	.col-sm-1-5 {
+		width: 20%;
+		float: left;
+	}				
+}
+@media (min-width: 992px) {
+	.col-md-1-5 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-1-5 {
+		width: 20%;
+		float: left;
+	}
+}
+.dia-dash {
+   font-size: 10px;
+   margin-bottom: 0;
+}
+
+.valor-dash {
+   font-size: 28px;
+}
+
+.tabs-dias div {
+   background-color: #ecf0f1;
+   padding-top: 18px;
+   border-bottom: 1px solid #dbdbdb;
+}
+
+.right-panel {
+   padding-top: 25px;
+}
+
+.tabs-dias {
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   overflow: initial;
+}
+
+.right-panel div .tab-selecionada {
+   background-color: white;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   padding-top: 29px; /* 2px from the corner radius + 1 from border + margin-top * 2 = 29 */
+   margin-top: -12px;
 }
