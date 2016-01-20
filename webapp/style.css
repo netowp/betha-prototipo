@@ -391,6 +391,8 @@ h3 {
    background-color: #ecf0f1;
    padding-top: 18px;
    border-bottom: 1px solid #dbdbdb;
+   position: relative;
+   z-index: -333;
 }
 
 .right-panel {
@@ -403,7 +405,9 @@ h3 {
    border-top: 1px solid #dbdbdb;
    border-left: 1px solid #dbdbdb;
    border-right: 1px solid #dbdbdb;
-   overflow: initial;
+   z-index: 99;
+   position: relative;
+
 }
 
 .right-panel div .tab-selecionada {
