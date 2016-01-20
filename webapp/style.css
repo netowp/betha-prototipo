@@ -15,6 +15,7 @@ html, body {
    height: 100%;
 }
 
+
 .header,
 .marketing,
 .footer {
@@ -28,7 +29,6 @@ html, body {
 }
 
 .header li a {
-   border-radius: 100px;
    padding-left: 25px;
    padding-right: 25px;
    margin-left: 15px;
@@ -159,6 +159,9 @@ Welcome to the weirdness world of web-developmentz */
    margin: 0;
 }
 
+li a {
+   
+}
 
 
 /* Removes the spin button from Chrome and webkit browsers.
@@ -315,7 +318,7 @@ h3 {
 }
 
 .navbar {
-   background: #29B6F6;
+   background: rgba(24, 180, 255, 0.96);
    margin: 0;
 }
 
@@ -438,7 +441,7 @@ h3 {
    border-right: 1px solid #dbdbdb;
    border-bottom: 1px solid #dbdbdb;
    background: white;
-   margin-bottom: 0 25px;
+   margin-bottom: 25px;
 }
 
 .tabs-dias ~ .dash-box-content {
@@ -460,8 +463,17 @@ h3 {
    position: fixed;
 }
 
+.menu-lateral .glyphicon {
+   font-size: 12px;
+   vertical-align: baseline;
+   margin-right: 10px;
+}
+
+div .menu-lateral ul li a {
+   color: #333;
+}
+
 .menu-lateral ul li {
-   border-radius: 20px;
    margin: 0;
 }
 
@@ -470,37 +482,38 @@ h3 {
 }
 
 .active {
-   background-color: #29B6F6;
+   background-color: rgba(24, 180, 255, 0.96);
 }
 
 .nav-pills > li.active > a, 
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
-   background-color: #29B6F6;
+   background-color: rgba(24, 180, 255, 0.96);
 }
 
 
-/* Hide for mobile, show later */
-.sidebar {
-  display: none;
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+   background-color: transparent;
 }
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
-}
-
 
 .conteudo {
    float: right;
+}
+
+.navbar-inverse {
+   border: 0;
+}
+.dashboard {
+   margin-top: 50px;
+}
+
+.bloco {
+   padding: 25px 15px 5px 15px;;
+   color: #c4c4c4;
+   font-weight: 500;
+   font-size: 10px;
+   text-transform: uppercase;
+
 }
