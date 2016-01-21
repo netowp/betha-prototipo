@@ -1,0 +1,522 @@
+/* Space out content a bit */
+/*
+body {
+padding-bottom: 20px;
+}
+*/
+
+html, body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 16px;
+   background-color: #f8f8f8;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 50px;
+   height: 100%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+.header,
+.marketing,
+.footer {
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.header {
+   background-color: #29B6F6;
+   height: 64px;
+}
+
+.header li a {
+   padding-left: 25px;
+   padding-right: 25px;
+   margin-left: 15px;
+}
+
+.header h3,
+.header p {
+   margin-top: 0;
+   margin-bottom: 0;
+   line-height: 40px;
+   color: white;
+}
+
+.btn-group {
+   margin: 32px 0 28px 0;
+}
+
+.custom-input {
+   width: 100%;
+}
+
+.content {
+   overflow: hidden;
+   position: relative;
+   max-width: 100%;
+   width: 100%;
+   height: 200px;
+   background-color: white;
+   height: auto;
+   margin-bottom: 25px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 36px;
+   padding: 10px 25px 25px 25px;
+   border-radius: 3px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+/* Weird thing 'bout this.
+If font-size is even, the text inside the input
+will be cutted off. 
+
+Welcome to the weirdness world of web-developmentz */
+.custom-input input,
+.custom-input button {
+   padding: 16px;
+   height: auto;
+   font-size: 18px;
+}
+
+.custom-input .btn {
+   margin-left: 12px;
+   background: #29B6F6;
+   color: white;
+   border: 0;
+}
+
+.btn-group .btn {
+   border-radius: 100px;
+}
+
+.footer {
+   padding-top: 19px;
+   color: #777;
+   border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+   .jumbotron .container,
+   .container {
+      max-width: 730px;
+   }
+}
+.container-narrow > hr {
+   margin: 30px 0;
+}
+
+.jumbotron {
+   text-align: center;
+   border-bottom: 1px solid #e5e5e5;
+   background-color: #4FC3F7;
+}
+.jumbotron .btn {
+   padding: 14px 24px;
+   font-size: 21px;
+}
+
+.jumbotron h1 {
+   font-size: 36px;
+   font-weight: 100;
+   margin-top: 50px;
+   margin-bottom: 60px;
+   color: white;
+}
+
+.jumbotron p {
+   font-weight: 200;
+   color: white;
+}
+
+.marketing {
+   margin: 40px 0;
+}
+.marketing p + h4 {
+   margin-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+
+   .header,
+   .marketing,
+   .footer {
+      padding-right: 0;
+      padding-left: 0;
+   }
+
+   .jumbotron {
+      border-bottom: 0;
+   }
+
+}
+
+.ins-imobiliaria {
+   font-size: 48px;
+   font-weight: 400;
+   margin: 0;
+}
+
+li a {
+   
+}
+
+
+/* Removes the spin button from Chrome and webkit browsers.
+Man, it is annoying some times */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0; 
+}
+
+.infos {
+   font-weight: 200;
+}
+
+
+
+.endereco {
+   line-height: 22px;
+}
+
+.right p {
+   margin-bottom: -30px;
+   margin: 0px;
+   vertical-align: top;
+}
+
+.left {
+   float: left;
+   height: 100%;
+   clear: both;
+   position: relative;
+}
+
+.barcode {
+   height: auto;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   max-width: 150px;
+   display: block;
+   margin: auto;
+
+}
+.nopadding {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+}
+
+.info-pagamento h2 {
+   padding: 0;
+   margin-top: 0;
+}
+
+.btasn {
+
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.1;
+   text-transform: uppercase;
+   letter-spacing: inherit;
+   color: rgba(255, 255, 255, 0.87);
+}
+.test {
+   background-color: #E5615C;
+   color: white;
+   font-weight: 100;
+}
+
+.test p {
+   font-weight: 100;
+}
+
+.glyphicon.glyphicon-one-fine-dot:before {
+   content: "\25cf";
+   font-size: 1em;
+   margin-right: 12px;
+}
+
+.icon-green {
+   color: #A8E763;
+}
+
+.icon-orange {
+   color: #FF7A75;
+}
+
+.detalhes-conta-anual h1 {
+   margin-bottom: 6px;
+}
+
+.legenda {
+   color: #4a4a4a;
+   font-weight: 200;
+   font-size: 14px;
+}
+
+/*
+.row {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display:         flex;
+}
+*/
+
+.caracteristicas hr,
+h4 + hr {
+   margin: 2px 0;
+}
+
+.caracteristicas .valor {
+   margin: 0;
+   font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+   body {
+
+   }
+
+   .barcode {
+      max-width: 64px;
+   }
+
+   h1,
+   .ins-imobiliaria {
+      font-size: 28px;
+   }
+}
+
+.categoria {
+   font-size: 12px;
+   margin: 0;
+   color: #888888;
+}
+
+h3 {
+   margin: 0;
+}
+
+.inicio {
+   margin-top: 56px;
+}
+
+.logotype {
+   float: left;
+   height: 50px;
+   margin: 0px;
+   padding: 0px;
+}
+
+.navbar {
+   background: rgba(24, 180, 255, 0.96);
+   margin: 0;
+}
+
+.navbar .nav > li > a {
+   padding: 15px 0px;
+}
+
+.navbar-inverse .navbar-brand {
+   color: white;
+}
+
+.navbar .nav > li > a > span { 
+   color: white; 
+   font-weight: 500;
+   padding: 8px 20px 8px 20px;
+}
+
+.navbar .nav > li > a > span:hover { 
+   border-radius: 28px;
+   background: #1ea1e0 ;
+}
+.navbar-static-top {
+   border: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+   border: 0;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+   background: none;
+}
+
+/*FOR DARSHBOARD*/
+
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.col-xs-1-5 {
+   width: 20%;
+   float: left;
+}
+@media (min-width: 768px) {
+   .col-sm-1-5 {
+      width: 20%;
+      float: left;
+   }				
+}
+@media (min-width: 992px) {
+   .col-md-1-5 {
+      width: 20%;
+      float: left;
+   }
+}
+@media (min-width: 1200px) {
+   .col-lg-1-5 {
+      width: 20%;
+      float: left;
+   }
+}
+.dia-dash {
+   font-size: 10px;
+   margin-bottom: 0;
+}
+
+.valor-dash {
+   font-size: 22px;
+}
+
+.tabs-dias div {
+   padding-top: 18px;
+   border-bottom: 1px solid #dbdbdb;
+   z-index: -333;
+}
+
+.right-panel {
+   margin-top: 25px;
+   padding-left: 25px;
+   padding-right: 25px;
+
+}
+
+.tabs-dias {
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   z-index: 99;
+   position: relative;
+   background-color: #ecf0f1;
+   background-clip: border-box;
+
+}
+
+.right-panel div .tab-selecionada {
+   background-color: white;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   border-bottom: 1px solid white;
+   padding-top: 29px; /* 2px from the corner radius + 1 from border + margin-top * 2 = 29 */
+   margin-top: -12px;
+}
+
+.dash-box {
+   margin-top: 25px;
+}
+
+.dash-box-content {
+   padding: 25px 0;
+   border-top: 1px solid #dbdbdb;
+   border-left: 1px solid #dbdbdb;
+   border-right: 1px solid #dbdbdb;
+   border-bottom: 1px solid #dbdbdb;
+   background: white;
+   margin-bottom: 25px;
+}
+
+.tabs-dias ~ .dash-box-content {
+   border-top: 0;
+}
+.detalhes-usuarios-online .glyphicon {
+   vertical-align: middle;
+   font-size: 20px;
+   display: inline-block;
+   margin-top: -5px;
+   margin-right: 5px;
+}
+
+.menu-lateral {
+   padding: 0;
+   border-right: 1px solid #dbdbdb;
+   height: 100%;  
+   float: left;
+   position: fixed;
+}
+
+.menu-lateral .glyphicon {
+   font-size: 12px;
+   vertical-align: baseline;
+   margin-right: 10px;
+}
+
+div .menu-lateral ul li a {
+   color: #333;
+}
+
+.menu-lateral ul li {
+   margin: 0;
+}
+
+.menu-lateral .nav-pills>li>a {
+   border-radius: 0;
+}
+
+.active {
+   background-color: rgba(24, 180, 255, 0.96);
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+   background-color: rgba(24, 180, 255, 0.96);
+}
+
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+   background-color: transparent;
+}
+
+.conteudo {
+   float: right;
+}
+
+.navbar-inverse {
+   border: 0;
+}
+.dashboard {
+   margin-top: 50px;
+}
+
+.bloco {
+   padding: 25px 15px 5px 15px;;
+   color: #c4c4c4;
+   font-weight: 500;
+   font-size: 10px;
+   text-transform: uppercase;
+
+}

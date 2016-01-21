@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="betha">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>IPTU Online</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="style.css" rel="stylesheet">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+   </head>
+   <body>
+      <div class="">
+         <div class="">
+
+            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+
+                     <a class="navbar-brand" href="index.html">Prefeitura Municipal</a>
+
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span>Início</span></a></li>
+                        <li><a href="#"><span>Sobre</span></a></li>
+                        <li><a href="dashboard.html"><span>Administração</span></a></li>
+                     </ul>
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="container">
+
+               <div class="text-center inicio">
+
+                  <p>Inscrição Imobiliária número</p>
+                  <h1 class="ins-imobiliaria">02.030.0165.000.00.001</h1>
+                  <p class="endereco">Rua Presidente João Pessoa, 99 - Bairro Boa Vista<br /> São Mamede, PB 58.625-000</p>
+
+                  <hr>
+
+                  <p class="infos">Nesta página, você pode consultar informações relacionadas ao IPTU atual, ver informações sobre o seu imóvel ou terreno no nosso banco de dados e também ver as parcelas pagas em anos anteriores.</p>
+               </div>
+
+               <div id="main-container" class="container content">
+
+                  <h2>Dados do Imóvel/Terreno</h2>
+
+                  <p class="hidden">Caso algum dos seguintes dados esteja desatualizado, entre em contato com a prefeitura em <a href="mailto:contato@prefeitura.gov.br?Subject=Arhh, esse email não existe :)" target="_top">contato@prefeitura.gov.br</a> ou ligue para (00) 90088-9988.</p>
+
+                  <div class="caracteristicas">
+
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                           <p class="categoria">Nome do proprietário(a)</p>
+                           <p class="valor">Bruna Melo Rocha</p>
+                           <hr>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                           <p class="categoria">Setor</p>
+                           <p class="valor">02</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                           <p class="categoria">Quadra</p>
+                           <p class="valor">30</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-3">
+                           <p class="categoria">Lote</p>
+                           <p class="valor">0165</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                           <p class="categoria">Vila</p>
+                           <p class="valor">000</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2">
+                           <p class="categoria">Sub-lote</p>
+                           <p class="valor">00</p>
+                           <hr>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-10">
+                           <p class="categoria">Rua</p>
+                           <p class="valor">Rua Presidente João Pessoa</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-2">
+                           <p class="categoria">Número</p>
+                           <p class="valor">99</p>
+                           <hr>
+                        </div>
+
+
+                        <!--
+</div>
+
+<div class="row">
+-->
+
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">Bairro</p>
+                           <p class="valor">Boa Vista</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">Cidade/Estado</p>
+                           <p class="valor">São Mamede, PB</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">CEP</p>
+                           <p class="valor">58.625-000</p>
+                           <hr>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">Área total do terreno</p>
+                           <p class="valor">237,25m<sup>2</sup></p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">Área construída</p>
+                           <p class="valor">125m<sup>2</sup></p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4">
+                           <p class="categoria">Pavimentação da rua</p>
+                           <p class="valor">Asfalto</p>
+                           <hr>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 hidden-sm hidden-md hidden-lg">
+                           <p class="categoria">Arborização da rua</p>
+                           <p class="valor">Média</p>
+                           <hr>
+                        </div>
+                     </div>
+
+                  </div>
+
+
+               </div>
+
+
+               <div id="main-container" class="container content">
+
+                  <div class="detalhes-conta-anual row">
+                     <div class="col-sm-4 col-sm-12 text-center first-column">
+                        <h1 class="text-center"><span id="ano">2016</span></h1>
+                        <span class="legenda ano">ano</span>
+                     </div>
+
+                     <div class="col-sm-4 col-sm-6 text-center">
+                        <h1 class="text-center"><span class="glyphicon glyphicon-one-fine-dot icon-orange hidden"></span><span id="ano">R$ 213,98</span></h1>
+                        <span class="legenda valor">valor</span>
+                     </div>
+
+                     <div class="col-sm-4 col-sm-6 text-center">
+                        <h1 class="text-center"><span id="ano">20/12/2016</span></h1>
+                        <span class="legenda vencimento">vencimento</span>
+                     </div>
+                  </div>
+
+                  <hr>
+
+                  <p>
+                     <span id="summary">Pague sua parcela antes da data de vencimento e receba 10% de desconto no IPTU do próximo ano. <br />Após o vencimento, é aplicada uma multa de 20% e juros de mora de 1% ao mês.</span>
+                  </p>
+
+                  <hr>
+
+
+                  <div class="info-pagamento row">
+                     <div class="col-sm-2 hidden-xs text-center">
+                        <img src="barcode.png" class="img-responsive barcode" alt="Ícone de um código de barras">               
+                     </div>
+
+                     <div class="col-sm-10">
+                        <h2>Boleto Bancário</h2>
+                        <p>Clique no botão abaixo para gerar um boleto bancário pagável em qualquer banco. Após o pagamento, espere até três dias úteis para que o sistema receba e atualize o pagamento.</p>
+
+                        <button type="button" class="btn btn-info">GERAR BOLETO BANCÁRIO</button>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!--            Fim de 2016-->
+
+               <!--            Início de 2016-->
+
+               <div ng-controller="iptuControl">
+                  
+                  <div id="main-container" class="container content" ng-repeat="x in iptus">
+
+                     <div class="detalhes-conta-anual row">
+                        <div class="col-sm-4 col-sm-12 text-center first-column">
+                           <h1 class="text-center"><span id="ano" ng-clock>{{ x.ano }}</span></h1>
+                           <span class="legenda ano">ano</span>
+                        </div>
+
+                        <div class="col-sm-4 col-sm-6 text-center">
+                           <h1 class="text-center"><span class="glyphicon glyphicon-one-fine-dot icon-green"></span><span id="ano" ng-clock>{{ x.valor | currency : "R$ " : fractionSize }}</span></h1>
+                           <span class="legenda valor">valor</span>
+                        </div>
+
+                        <div class="col-sm-4 col-sm-6 text-center">
+                           <h1 class="text-center"><span id="ano" ng-clock>{{ x.situacao }}</span></h1>
+                           <span class="legenda vencimento">situação</span>
+                        </div>
+                     </div>
+
+                     <hr>
+
+                     <p>
+                        <span id="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non velit enim. Donec volutpat eleifend risus, eget commodo urna convallis at.</span>
+                     </p>
+
+                  </div>
+               </div>
+
+            </div>
+
+
+            <footer class="footer text-center">
+               <p>&copy; 2016 Betha.</p>
+            </footer>
+
+         </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="scripts.js"></script>
+
+   </body>
+</html>
