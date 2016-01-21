@@ -19,3 +19,8 @@ app.controller('financasControl', function($scope, $http) {
    $http.get("financas.js")
       .then(function (response) {$scope.financas = response.data;});
 });
+
+app.controller('iptuControl', function($scope, $http) {
+   $http.get("iptu.js")
+      .then(function (response) {$scope.iptus = response.data.iptu;});
+});

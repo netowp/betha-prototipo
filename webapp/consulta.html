@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="betha">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,8 @@
 
       <!-- Custom styles for this template -->
       <link href="style.css" rel="stylesheet">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -224,68 +226,39 @@
                   </div>
                </div>
 
-
-
-
-
                <!--            Fim de 2016-->
 
                <!--            Início de 2016-->
 
-               <div id="main-container" class="container content">
+               <div ng-controller="iptuControl">
+                  
+                  <div id="main-container" class="container content" ng-repeat="x in iptus">
 
-                  <div class="detalhes-conta-anual row">
-                     <div class="col-sm-4 col-sm-12 text-center first-column">
-                        <h1 class="text-center"><span id="ano">2015</span></h1>
-                        <span class="legenda ano">ano</span>
+                     <div class="detalhes-conta-anual row">
+                        <div class="col-sm-4 col-sm-12 text-center first-column">
+                           <h1 class="text-center"><span id="ano" ng-clock>{{ x.ano }}</span></h1>
+                           <span class="legenda ano">ano</span>
+                        </div>
+
+                        <div class="col-sm-4 col-sm-6 text-center">
+                           <h1 class="text-center"><span class="glyphicon glyphicon-one-fine-dot icon-green"></span><span id="ano" ng-clock>{{ x.valor | currency : "R$ " : fractionSize }}</span></h1>
+                           <span class="legenda valor">valor</span>
+                        </div>
+
+                        <div class="col-sm-4 col-sm-6 text-center">
+                           <h1 class="text-center"><span id="ano" ng-clock>{{ x.situacao }}</span></h1>
+                           <span class="legenda vencimento">situação</span>
+                        </div>
                      </div>
 
-                     <div class="col-sm-4 col-sm-6 text-center">
-                        <h1 class="text-center"><span class="glyphicon glyphicon-one-fine-dot icon-green"></span><span id="ano">R$ 213,98</span></h1>
-                        <span class="legenda valor">valor</span>
-                     </div>
+                     <hr>
 
-                     <div class="col-sm-4 col-sm-6 text-center">
-                        <h1 class="text-center"><span id="ano">Pago</span></h1>
-                        <span class="legenda vencimento">situação</span>
-                     </div>
+                     <p>
+                        <span id="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non velit enim. Donec volutpat eleifend risus, eget commodo urna convallis at.</span>
+                     </p>
+
                   </div>
-
-                  <hr>
-
-                  <p>
-                     <span id="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non velit enim. Donec volutpat eleifend risus, eget commodo urna convallis at.</span>
-                  </p>
-
                </div>
-
-               <div id="main-container" class="container content">
-
-                  <div class="detalhes-conta-anual row">
-                     <div class="col-sm-4 col-sm-12 text-center first-column">
-                        <h1 class="text-center"><span id="ano">2014</span></h1>
-                        <span class="legenda ano">ano</span>
-                     </div>
-
-                     <div class="col-sm-4 col-sm-6 text-center">
-                        <h1 class="text-center"><span class="glyphicon glyphicon-one-fine-dot icon-green"></span><span id="ano">R$ 178,00</span></h1>
-                        <span class="legenda valor">valor</span>
-                     </div>
-
-                     <div class="col-sm-4 col-sm-6 text-center">
-                        <h1 class="text-center"><span id="ano">Pago</span></h1>
-                        <span class="legenda vencimento">situação</span>
-                     </div>
-                  </div>
-
-                  <hr>
-
-                  <p>
-                     <span id="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non velit enim. Donec volutpat eleifend risus, eget commodo urna convallis at.</span>
-                  </p>
-
-               </div>
-
 
             </div>
 
@@ -295,9 +268,11 @@
             </footer>
 
          </div>
+      </div>
 
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-         <script src="js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="scripts.js"></script>
 
-         </body>
-      </html>
+   </body>
+</html>
